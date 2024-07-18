@@ -1,1 +1,188 @@
-/* ini css */
+/* style bagian body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* style bagian header */
+header {
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* style bagian main */
+main {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+}
+/* style bagian section */
+section {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+/* style untuk pesan kesalahan */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ffcccc;
+    border-radius: 8px;
+    display: none;
+    position: relative;
+    margin-bottom: 4%;
+}
+
+.error-message .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+/* style bagian form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    outline: none;
+}
+.form-group .radio-group {
+    display: flex;
+    justify-content: flex-start;
+}
+.form-group .radio-group label {
+    margin-right: 10px;
+}
+
+/* syle bagian button */
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+}
+.button-group button {
+    flex: 1;
+    padding: 16px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.button-group button:last-child {
+    margin-right: 0;
+}
+.button-group button:hover {
+    background-color: #0056b3;
+}
+#resetBtn {
+    background-color: #c3bebe;
+}
+#resetBtn:hover {
+    background-color: #828282;
+}
+
+section h2{
+    text-align: center;
+    padding-bottom: 8%;
+}
+
+/* style bagian hasil */
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 16px;
+}
+.result div {
+    background-color: white;
+    border-radius: 16px;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-weight: bold;
+    color: #0056b3;
+    font-size: 40px;
+}
+.result h4 {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 18px; ;
+    border-style: dashed;
+    padding: 10px;
+    border-radius: 16px;
+}
+.result p {
+    margin: 5px 0;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 16px;
+    text-align: justify;
+}
+section h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* style untuk menyesuaikan tampilan dengan device */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+    section {
+        padding: 15px;
+    }
+    .form-group .radio-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .form-group .radio-group label {
+        margin-bottom: 5px;
+    }
+    .button-group {
+        flex-direction: column;
+    }
+    .button-group button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    main {
+        padding: 20px;
+    }
+    section {
+        padding: 20px;
+    }
+}
